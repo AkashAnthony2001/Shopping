@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { ProductPageComponent } from './product-page/product-page.component';
 import { CartPageComponent } from './cart-page/cart-page.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { AddToCartService } from './add-to-cart.service';
 
 @NgModule({
   declarations: [
@@ -16,9 +18,11 @@ import { CartPageComponent } from './cart-page/cart-page.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [AddToCartService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
