@@ -68,14 +68,15 @@
 </div>
 
 <div class="container-fluid p-5">
-  <p class="h2"></p>
   <div class="row">
-    <div class="card" style="width: 18rem;" *ngFor="let i of product"> 
-      <img class="card-img-top" src="{{i.image}}" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">{{i.name}}</h5>
-        <p class="card-text">{{i.description}}</p>
-        <a href="#" class="btn btn-primary">Add To Cart</a>
+    <div class="col mb-5" *ngFor="let i of product">
+      <div class="card" style="width: 18rem;" >
+        <img class="card-img-top" src="{{i.image}}" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">{{i.name}}</h5>
+          <p class="card-text">{{i.description}}</p>
+          <a href="#" class="btn btn-primary">Add To Cart</a>
+        </div>
       </div>
     </div>
   </div>

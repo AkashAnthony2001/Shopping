@@ -48,6 +48,38 @@ export class ProductsService {
       image:"assets/Mobiles/01-ihpone-13-pro.png",
       rating:4.5
     },
+    {
+      name:"Watches",
+      description:"The biggest Pro camera system upgrade ever. Super Retina XDR display with Pro - Motion for a faster, more responsive feel.",
+      price:144999,
+      type:"Watches",
+      image:"assets/Mobiles/01-ihpone-13-pro.png",
+      rating:4.5
+    },
+    {
+      name:"Watches",
+      description:"The biggest Pro camera system upgrade ever. Super Retina XDR display with Pro - Motion for a faster, more responsive feel.",
+      price:144999,
+      type:"Watches",
+      image:"assets/Mobiles/01-ihpone-13-pro.png",
+      rating:4.5
+    },
+    {
+      name:"Watches",
+      description:"The biggest Pro camera system upgrade ever. Super Retina XDR display with Pro - Motion for a faster, more responsive feel.",
+      price:144999,
+      type:"Watches",
+      image:"assets/Mobiles/01-ihpone-13-pro.png",
+      rating:4.5
+    },
+    {
+      name:"Watches",
+      description:"The biggest Pro camera system upgrade ever. Super Retina XDR display with Pro - Motion for a faster, more responsive feel.",
+      price:144999,
+      type:"Watches",
+      image:"assets/Mobiles/01-ihpone-13-pro.png",
+      rating:4.5
+    },
   ]
   returnproducts(){
     return this.products;
