@@ -71,10 +71,11 @@
   
     <div class="row">
         <div class="card p-2 m-1 " *ngFor="let i of product" style="width:15rem;">
-          <img class="card-img-top bg-image hover-zoom" src="{{i.image}}" style="width:50%;" alt="Card image cap">
+          <div class="card-img text-center"><img class="card-img-top bg-image hover-zoom" src="{{i.image}}" style="width:80%;" alt="Card image cap"></div>
           <div class="card-body">
             <h5 class="card-title">{{i.name}}</h5>
             <p class="card-text">{{i.description}}</p>
+            <p class="card-text"><button class="btn border rounded-circle">+</button><span>{{i.quan}}</span><button class="btn border rounded-circle" style="width:35px;">-</button></p>
             <p class="card-text">{{i.price | currency : 'INR'}}</p>
             <a href="#" class="btn btn-primary">Add To Cart</a>
           </div>
