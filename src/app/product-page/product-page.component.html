@@ -15,9 +15,7 @@
             <a class="nav-link" href="#">Link</a>
           </li>
         </ul>
-        <form class="d-flex" role="navigation">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
+        <button class="btn btn-outline-success" (click)="gotocart()">Go To Cart</button>
       </div>
     </div>
   </nav>
@@ -67,18 +65,18 @@
   </div>
 </div>
 
-<div class="container-fluid p-3">
+<div class="container-fluid px-3">
   
-    <div class="row shadow px-2">
+    <div class="row shadow py-4 ">
       
         <div class="card p-2 m-1 shadow " *ngFor="let i of product" style="width:15rem;">
           <div class="card-img text-center"><img class="card-img-top " src="{{i.image}}" style="width:80%;" alt="Card image cap"></div>
           <div class="card-body">
             <h5 class="card-title">{{i.name}}</h5>
             <p class="card-text">{{i.description}}</p>
-            <p class="card-text"><button class="btn border rounded-circle bg-primary">+</button><span class="text p-2">{{i.quan}}</span><button class="btn border rounded-circle bg-primary" style="width:35px;">-</button></p>
+            <p class="card-text"><button class="btn border rounded-circle bg-primary" (click)="dec(i)"><i class="fa fa-minus text-light "></i></button><span class="text p-2">{{i.quan}}</span><button class="btn border rounded-circle bg-primary" (click)="inc(i)"><i class="fa fa-plus text-light"></i></button></p>
             <p class="card-text">{{i.price | currency : 'INR'}}</p>
-            <a href="#" class="btn btn-primary">Add To Cart</a>
+            <a  class="btn btn-primary" (click)="sendtocart(i)">Add To Cart</a>
           </div>
         </div>
         
