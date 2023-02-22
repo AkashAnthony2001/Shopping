@@ -15,5 +15,16 @@ product:any[]=[]
   ngOnInit(): void {
   }
 
+  dec(i:any){
+    if(i.quan != 0){
+    i.quan=i.quan - 1;
+    }
+  }
+  inc(i:any){
+    if(i.quan != 5){
+    i.quan=i.quan + 1;
+    }
+  }
 
+  
 }
